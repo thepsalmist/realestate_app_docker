@@ -1,0 +1,94 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Real Estate</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <link href="{% static 'core/lib/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/lib/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/lib/animate.css' %}" rel="stylesheet">
+    <link href="{% static 'core/lib/selectric/selectric.css' %}" rel="stylesheet">
+    <link href="{% static 'core/lib/swiper/css/swiper.min.css' %}" rel="stylesheet">
+    <link href="{% static 'core/lib/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'core/lib/Magnific-Popup/magnific-popup.css' %}" rel="stylesheet">
+    <link href="{% static 'core/css/style.css' %}" rel="stylesheet">
+
+
+
+</head>
+
+<body class="page-load">
+
+    {% if messages %}
+    {% for message in messages%}
+    <div class="alert alert-{{message.tags}}">
+        {{message}}
+    </div>
+
+    {% endfor%}
+    {% endif %}
+
+    {% block content %}
+    {% endblock content %}
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="{% static 'core/lib/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'core/lib/popper.min.js' %}"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="{% static 'core/lib/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'core/lib/selectric/jquery.selectric.js' %}"></script>
+    <script src="{% static 'core/lib/swiper/js/swiper.min.js' %}"></script>
+    <script src="{% static 'core/lib/aos/aos.js' %}"></script>
+    <script src="{% static 'core/lib/Magnific-Popup/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'core/lib/sticky-sidebar/ResizeSensor.min.js' %}"></script>
+    <script src="{% static 'core/lib/sticky-sidebar/theia-sticky-sidebar.min.js' %}"></script>
+    <script src="{% static 'core/lib/lib.js' %}"></script>
+    <script>
+        var swiper = new Swiper('.featured-slider', {
+            slidesPerView: 2,
+            centeredSlides: true,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                991: {
+                    slidesPerView: 3,
+                    centeredSlides: true,
+                },
+                768: {
+                    slidesPerView: 2,
+                    centeredSlides: true,
+                },
+                640: {
+                    slidesPerView: 1,
+                    centeredSlides: false,
+                },
+                320: {
+                    slidesPerView: 1,
+                    centeredSlides: false,
+                }
+            }
+        });
+    </script>
+
+</body>
+
+</html>

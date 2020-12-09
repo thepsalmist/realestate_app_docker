@@ -1,0 +1,274 @@
+{% extends "core/base.html"%}
+
+{% load static %}
+
+{% block content %}
+
+<div id="main">
+  {% include 'core/header.html' %}
+  <div class="home-search">
+    <div class="swiper-container item-listing grid featured-gallery featured-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="item">
+            <div class="item-image"><a href="#">
+                <div class="image" style="background-image:url('{% static "core/img/house/new_5.jpg" %}');"></div>
+                <div class="item-meta">
+                  <div class="item-info">
+                    <h3 class="item-title">3 bed bungalow</h3>
+                    <div class="item-location"><i class="fa fa-map-marker"></i> Airways Park Estate Utawala</div>
+                  </div>
+                  <div class="item-price">Ksh 4,850,000 <small> 3200 / sq m</small> </div>
+                </div>
+                <div class="item-badges">
+                  <div class="item-badge-left">Featured</div>
+                  <div class="item-badge-right">For Sale</div>
+                </div>
+              </a> <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item">
+            <div class="item-image"><a href="#">
+                <div class="image" style="background-image:url('{% static "core/img/house/new_3.jpg" %}');"></div>
+                <div class="item-meta">
+                  <div class="item-info">
+                    <h3 class="item-title">3 bed bungalow</h3>
+                    <div class="item-location"><i class="fa fa-map-marker"></i> Airways Park Estate Utawala</div>
+                  </div>
+                  <div class="item-price">Ksh 4,850,000 <small>3200 / sq m</small> </div>
+                </div>
+                <div class="item-badges">
+                  <div class="item-badge-left">Featured</div>
+                  <div class="item-badge-right">For Sale</div>
+                </div>
+              </a> <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="item">
+            <div class="item-image"><a href="#">
+                <div class="image" style="background-image:url('{% static 'core/img/house/new_2.jpg' %}');"></div>
+              </a> <a href="#" class="save-item"><i class="fa fa-star"></i></a> </div>
+          </div>
+        </div>
+      </div>
+      <!-- Add Arrows -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+  <div id="content" class="pt0 pb0">
+    <div class="feature-box centered gray">
+      <div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-12 col-xl-10">
+              <div class="main-title"><span>Welcome To New Way Developers</span></div>
+              <div class="main-title-description">Thinking about buying property,look at our developments below</div>
+              <div class="clearfix"></div>
+              <div class="mt50 mb50">
+                <div class="featured-gallery v2 item-listing grid">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="item item-lg">
+                        <div class="item-image"
+                          style="background-image:url('{% static "core/img/house/new_1.jpg" %}');"><a href="#">
+
+                            <div class="item-badges">
+                              <div class="item-badge-right">For Sale</div>
+                            </div>
+                          </a> </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="item item-md">
+                            <div class="item-image"
+                              style="background-image:url('{% static "core/img/house/house_7.jpg" %}');"><a href="#">
+                                <div class="item-meta">
+                                </div>
+                                <div class="item-badges">
+                                  <div class="item-badge-right">Bedrooms</div>
+                                </div>
+                              </a> </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <div class="item item-sm">
+                            <div class="item-image"
+                              style="background-image:url('{% static "core/img/house/new_7.jpg" %}');"><a href="#">
+                                <div class="item-meta">
+                                </div>
+                                <div class="item-badges">
+                                  <div class="item-badge-right">Living Room</div>
+                                </div>
+                              </a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="item item-sm">
+                            <div class="item-image"
+                              style="background-image:url('{% static "core/img/house/new_4.jpg"%}')" ;><a
+                                href="property_single.html">
+                                <div class="item-badges">
+                                  <div class="item-badge-right">Kitchen</div>
+                                </div>
+                              </a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center"><a href="#" class="btn btn-xlg btn-link">Explore More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-box centered">
+      <div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-12 col-xl-10">
+              <div class="main-title"><span>Our Services</span></div>
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="content-box">
+                    <h4>Property Development</h4>
+                    <div class="caption"> We build great properties that reflects Kenya's uniqueculture at affordable
+                      rates.</div>
+                    <div class="button"><a href="#">FIND YOUR INSPIRATION</a></div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="content-box">
+                    <h4>Plot Sales</h4>
+                    <div class="caption">We have multiple plots along Kenya's Coast, get yours today.
+                    </div>
+                    <div class="button"><a href="#">CHOOSE A COUNTRY</a></div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="content-box">
+                    <h4>Property Advice</h4>
+                    <div class="caption">We have a team of great real estate agents who woul provide you with the best
+                      property advice.</div>
+                    <div class="button"><a href="#">EXPLORE NOW</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-box centered gray">
+      <div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-12 col-xl-10">
+              <div class="item-listing grid">
+                <div class="main-title"><span>Beach Plots</span></div>
+                <div class="main-title-description">We have several beach plots along the Kenya Coast</div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item">
+                      <div class="item-image"><a href=""><img src="{% static 'core/img/house/new_8.jpg' %}"
+                            class="img-fluid" alt="">
+                          <div class="item-meta">
+                            <div class="item-info">
+                              <h3 class="item-title">Serviced Plots</h3>
+                              <div class="item-location"><i class="fa fa-map-marker"></i> Malindi Beach Plots</div>
+                            </div>
+                            <div class="item-price">Ksh 3,300,000 <small>1/4 Acre</small> </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="item">
+                      <div class="item-image"><a href="property_single.html"><img
+                            src="{% static 'core/img/house/new_8.jpg' %}" class="img-fluid" alt="">
+                          <div class="item-meta">
+                            <div class="item-info">
+                              <h3 class="item-title">Serviced Plots</h3>
+                              <div class="item-location"><i class="fa fa-map-marker"></i> Malindi Beach Plots</div>
+                            </div>
+                            <div class="item-price">Ksh 3,300,000 <small>1/4 Acre</small> </div>
+                          </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="item">
+                      <div class="item-image"><a href="property_single.html"><img
+                            src="{% static 'core/img/house/new_9.jpg' %}" class="img-fluid" alt="">
+                          <div class="item-meta">
+                            <div class="item-info">
+                              <h3 class="item-title">Serviced Plots</h3>
+                              <div class="item-location"><i class="fa fa-map-marker"></i> Malindi Beach Plots</div>
+                            </div>
+                            <div class="item-price">Ksh 3,300,000 <small>1/4 Acre</small> </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="feature-box centered pb0">
+      <div>
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col col-lg-12 col-xl-10">
+              <div class="main-title"><span>Property News &amp; and Advice </span></div>
+              <div class="main-title-description">Stay up to date with the latest property news and advice from real
+                estate experts.</div>
+              <div class="item-listing grid mb50">
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="item">
+                      <div class="item-image"> <a href="#"><img src="img/demo/property/7.jpg" class="img-fluid" alt="">
+                          <div class="item-meta">
+                            <div class="item-price"><small></small> </div>
+                          </div>
+                          <div class="item-badges">
+                            <div class="item-badge-right">Legal</div>
+                          </div>
+                        </a> </div>
+                      <div class="item-info">
+                        <h3 class="item-title"></h3>
+                        <div class="item-comments-count"><i class="fa fa-comment-o"></i> 3</div>
+                        <div class="item-author"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center"><a href="#" class="btn btn-xlg btn-link">View All</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-primary btn-circle" id="to-top"><i class="fa fa-angle-up"></i></button>
+  {% include 'core/footer.html' %}
+
+
+</div>
+
+
+
+{% endblock content %}
