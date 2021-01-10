@@ -40,7 +40,7 @@ services:
       context: .
       dockerfile: docker/prod/nginx/Dockerfile
     ports:
-      - 8001:80
+      - 8001:8001
     volumes:
       - staticfiles:/home/app/staticfiles
     depends_on:
